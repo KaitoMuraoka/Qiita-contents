@@ -1,13 +1,13 @@
 ---
 title: 【Xcode】Break Pointでprintデバッグする方法
 tags:
-  - 'iOS'
-  - 'Xcode'
-  - 'Swift'
-  - 'デバッグ'
+  - Xcode
+  - iOS
+  - debug
+  - Swift
 private: false
-updated_at: ''
-id: null
+updated_at: '2023-08-06T17:58:20+09:00'
+id: 540aea1539fcfb25b8ea
 organization_url_name: null
 slide: false
 ---
