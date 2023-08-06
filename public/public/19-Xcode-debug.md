@@ -1,5 +1,5 @@
 ---
-title: [Xcode]breakpointでprintデバッグする方法
+title: [Xcode]Break Pointでprintデバッグする方法
 tags:
   - iOS
   - Swift
@@ -68,3 +68,58 @@ XcodeにはFindという機能があり、そこで"print"と検索すれば探�
 ::
 
 また、printデバッグのもう1つの問題点は、新しい`print`関数を追加したい場合、アプリを再度buildする必要があります。
+
+
+# Break Pointを使ったデバッグ方法
+
+では、ここから本題のBreak Pointを使ったデバッグ方法について解説します。
+
+この方法を使うと、見た目がスッキリして`print`デバッグの短所を克服することができます。
+
+## 文字列を表示する方法
+Break Pointを使って任意の文字列を表示させます。
+方法は以下の通りです。
+
+1. 自分がprintデバッグしたい箇所の行番号をダブルクリックする
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/707293/da9d7e2e-1c29-5f28-ada5-52698cf3c397.png" width=50%>
+
+2. 以下の画像のように、Break Point Editorを表示される
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/707293/58ed6acc-356c-fa07-a31e-62baefe91333.png" width=50%>
+
+3. **Add Action**ボタンをクリックし、**Log Message**を選択する。出力したい文字列をtextフィールドに入力する。
+4. **Automatically continue after evaluating actions**をオンにする。これにより、このBreak Pointはデバッガが停止するのを防ぎます。
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/707293/8768e1d0-3c79-4a02-5514-ef89043b82b3.png" width=50%>
+これで、Break Pointの行に達すると、コンソールにログメッセージが表示されます。
+画像の場合だと`Hello World`と表示されます。
+
+
+以上のように、必要なステップはとても少ないです。
+そのため、`print`関数のように手軽に設置することが可能だと思います。
+
+## 変数を表示する
+次に変数を表示する方法を解説します。
+方法は以下の通りです。
+
+1. 自分がprintデバッグしたい箇所の行番号をダブルクリックする
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/707293/b532fed4-2ce3-aa9d-c7ef-da9e6d92847a.png" width=50%>
+
+2. 以下の画像のように、Break Point Editorを表示される
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/707293/77f71558-d931-fea0-a52e-e230fd9f82b9.png" width=50%>
+
+3. **Add Action**ボタンをクリックし、**Debugger Command**を選択する。出力したい任意のコマンドをテキストフィールドに入力します。`po print(hoge)`のように接頭辞を必ずつけてください
+4. **Automatically continue after evaluating actions**をオンにする。これにより、このBreak Pointはデバッガが停止するのを防ぎます。
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/707293/13c145fe-78df-f38a-b2e5-b4d9492b47b0.png" width=50%>
+
+これで、ブレークポイントの行に達すると、コンソールに変数が表示されます。
+この場合は、`101`が表示されます。
+
+## 長所
+以上のように、Break Pointを使うことによってより多くの利点が得られます。
+
+- あちらこちらに`print`関数がないので、後始末が不要：ブレークポイントを無効にするか、削除すればなくなります。
+- 素早く動かすことができる：ドラックすることによって行を移動することが可能です。
+- アプリを再度buildする必要がなくなる：Break Pointを追加・編集・削除・移動する際にアプリを再度コンパイルする必要がなくなります。
+
+## 参考文献
+
+https://sarunw.com/posts/better-print-debugging-with-xcode-breakpoints/
