@@ -1,11 +1,7 @@
 ---
-title: [Xcode]Break Pointでprintデバッグする方法
-tags:
-  - iOS
-  - Swift
-  - Xcode
-  - debug
-private: false
+title: "【Xcode】Break Pointでprintデバッグする方法"
+tags:[iOS, Swift, Xcode, debug]
+private:false
 updated_at: ''
 id: null
 organization_url_name: null
