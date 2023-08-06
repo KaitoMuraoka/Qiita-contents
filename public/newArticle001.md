@@ -9,6 +9,7 @@ private: false
 updated_at: ''
 id: null
 organization_url_name: null
+slide: false
 ---
 
 # 概要
