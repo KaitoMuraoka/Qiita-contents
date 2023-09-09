@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "@qiita/qiita-cli": "^0.4.0"
+    "@qiita/qiita-cli": "^0.4.0",
+    "textlint": "^13.3.3"
   }
 }
