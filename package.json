@@ -7,5 +7,9 @@
     "textlint-rule-period-in-list-item": "^1.0.1",
     "textlint-rule-preset-ja-spacing": "^2.3.0",
     "textlint-rule-preset-ja-technical-writing": "^8.0.0"
+  },
+  "scripts": {
+    "lint": "npx textlint ./public/*.md",
+    "fix": "npx textlint --fix ./public/*.md"
   }
 }
