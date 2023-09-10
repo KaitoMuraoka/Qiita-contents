@@ -16,7 +16,7 @@ slide: false
 この記事は、アプリを作っている際に幾度も「なんだっけ？」を解決するために作成した記事です。記事というか公開ノートのようなものです。
 
 # 前提
-classに`UITextFieldDelegate`を追加します。
+class に `UITextFieldDelegate` を追加します。
 
 ```swift
 import UIKit
@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITextFieldDele{
 
 ```
 
-`TextField`は任意のtextFieldです。
+`TextField` は任意の textField です。
 
 # タッチでキーボードを閉じる
 キーボード以外の場所をタップするとキーボードが閉じます。
@@ -47,7 +47,7 @@ class ViewController: UIViewController, UITextFieldDele{
 ```
 
 # リターンキーでキーボードを閉じる
-キーボードのReturnをタップするとキーボードが閉じます。
+キーボードの Return をタップするとキーボードが閉じます。
 
 ```swift
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
