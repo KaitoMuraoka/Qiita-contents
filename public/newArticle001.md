@@ -6,12 +6,11 @@ tags:
   - debug
   - Swift
 private: false
-updated_at: '2023-08-06T17:58:20+09:00'
 id: 540aea1539fcfb25b8ea
 organization_url_name: null
 slide: false
 ---
-
+<!-- textlint-disable -->
 # 概要
 開発や競技プログラミングをしている際、
 - その変数が任意のタイミングでどのような値を持っているのか
@@ -117,3 +116,4 @@ Break Point を使って任意の文字列を表示させます。
 
 
 https://sarunw.com/posts/better-print-debugging-with-xcode-breakpoints/
+<!-- textlint-enable -->
