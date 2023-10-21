@@ -6,11 +6,16 @@
         allow: [
           "世界開発者会議",
           "価格設定機能",
-          "太平洋夏時間"
+          "太平洋夏時間",
+          "累計感染者数",
+          "複数指定不可",
+          "自然言語処理",
+          "依存関係管理",
+          "疎結合高凝集",
         ]
       }
     },
-    "period-in-list-item": true,
+    "period-in-list-item": false,
     "preset-ja-spacing": {
       "ja-space-between-half-and-full-width": {
         "space": "always"
