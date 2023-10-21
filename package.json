@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@qiita/qiita-cli": "^0.4.0",
+    "@qiita/qiita-cli": "^1.3.0",
     "textlint": "^13.3.3",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
