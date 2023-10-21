@@ -12,6 +12,7 @@ id: ea77e40ca9f5cf69a6de
 organization_url_name: null
 slide: false
 ---
+<!-- textlint-disable -->
 # はじめに
 この記事は、アプリを作っている際に幾度も「なんだっけ？」を解決するために作成した記事です。記事というか公開ノートのようなものです。
 
@@ -62,3 +63,4 @@ class ViewController: UIViewController, UITextFieldDele{
 
 #最後に
 別の方法があったら追記していきたいと思います。
+<!-- textlint-enable -->
