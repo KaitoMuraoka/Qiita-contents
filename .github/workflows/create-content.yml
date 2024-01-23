@@ -34,6 +34,9 @@ jobs:
         run: |
           npm install
           npx qiita new ${{ github.event.inputs.issue_number }}_article
+          git add .
+          git commit -m "Create new Article Issue ${{ github.event.inputs.issue_number }}"
+          git push origin "article/${{ github.event.inputs.issue_number }}"
 
       - name: Create pull request
         env:
