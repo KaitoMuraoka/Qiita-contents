@@ -1,0 +1,49 @@
+name: Create Content
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: '記事のIssue番号'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  create-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set name and email to Git
+        run: |
+          git config --local user.name github-actions[bot]
+          git config --local user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Create and switch work branch
+        id: create_work_branch
+        run: |
+          WORK_BRANCH_NAME="article/${{ github.event.inputs.issue_number }}"
+          git switch -c $WORK_BRANCH_NAME
+          echo "work_branch_name=$WORK_BRANCH_NAME" >> $GITHUB_ENV
+
+      - name: Create Article
+        id: create_article
+        run: |
+          npm install
+          npx qiita new ${{ github.event.inputs.issue_number }}_article
+
+      - name: Create pull request
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh --version
+          gh pr create \
+            --title "Create Article #${{ github.event.inputs.issue_number }}" \
+            --body "Closes #${{ github.event.inputs.issue_number }}" \
+            --base ${{ github.event.repository.default_branch }} \
+            --head ${{ steps.create_work_branch.outputs.work_branch_name }} \
+            --draft
+
