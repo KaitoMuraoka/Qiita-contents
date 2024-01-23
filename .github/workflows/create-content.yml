@@ -48,5 +48,4 @@ jobs:
             --body "Closes #${{ github.event.inputs.issue_number }}" \
             --base ${{ github.event.repository.default_branch }} \
             --head ${{ steps.create_work_branch.outputs.work_branch_name }} \
-            --draft
 
