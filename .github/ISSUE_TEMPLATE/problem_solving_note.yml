@@ -1,11 +1,11 @@
-name: 技術ノート @ Android
-description: 趣味・仕事で見つけた技術的内容を書いてくAndroidノート
+name: 技術ノート
+description: 趣味・仕事で見つけた技術的内容を書いてくノート
 title: "[技術ノート]: "
-labels: ["記事にしてない😇", "Android"]
+labels: ["記事にしてない😇"]
 body:
   - type: markdown
     attributes:
-      value: 技術ノート@Android
+      value: 技術ノート
   - type: textarea
     id: problem
     attributes:
