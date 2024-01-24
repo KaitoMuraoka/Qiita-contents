@@ -5,57 +5,38 @@ labels: ["記事にしてない😇", "Android"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
+      value: 技術ノート@Android
+  - type: textarea
+    id: problem
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: 問題・課題の特定
+      description: バグを処理したり、既存コードを改善したり、新しい機能を実装したり、問題に直面したりする場合、全ては問題を特定し理解することから始まる。バグやエラーの場合、すぐに詳細なメモを用意する。エラーメッセージ、スタックトレース、スクリーンショット、その他、問題の本質を捉えるのに役立つものなど。ノートは小さな断片でもOKです。
+    validations:
+        required: true
+  - type: textarea
+    id: search
+    attributes:
+      label: 可能な解決策の調査
+      description: 問題を特定したあと、次のステップは潜在的な解決策を掘り下げることです。この段階では、有望なライブラリ、ツール、さらにはStack Overflowの回答や関連するGitHubのIssueを探索します。
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        ## ソリューションを検証
+        研究の対象となる可能性のあるソリューションを調べたり、まだ調べ途中であっても、実装してみて、どれがうまくいくか、どれがうまくいかないか、そしてその理由を見極める時間です。
+        このフェーズでは、試しているコードのスニペットと出力結果をキャプチャするダイナミックなコーディング記録になります。
+  - type: textarea
+    id: good-case
+    attributes:
+      label: うまくいった場合
+      description: うまくいった場合は、その問題の記録、潜在的な解決策、そして最終的な成功したアプローチなどは、知識ベースの貴重な一部となる。そうすることで、将来なぜこのソリューションを選んだのかを理解するために参照することができます。
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: bad-case
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: うまくいかなかった場合
+      description: 成功だけでなく、失敗も記録することで、繰り返し同じ間違いを犯さないように助けてくれ、そして挑戦に伴う課題をより深く理解するのに役立ちます。
     validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      required: false
