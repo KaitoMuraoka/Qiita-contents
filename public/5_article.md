@@ -1,10 +1,10 @@
 ---
 title: 技術ノートの取り方
 tags:
-  - 'ノート'
+  - ノート
 private: true
-updated_at: ''
-id: null
+updated_at: '2024-01-24T15:47:42+09:00'
+id: 928d9c18f89aa52e963e
 organization_url_name: null
 slide: false
 ignorePublish: false
