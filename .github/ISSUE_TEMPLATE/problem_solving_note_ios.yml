@@ -1,0 +1,42 @@
+name: 技術ノート @ iOS
+description: 趣味・仕事で見つけた技術的内容を書いてくiOSノート
+title: "[技術ノート]: "
+labels: ["記事にしてない😇", "iOS"]
+body:
+  - type: markdown
+    attributes:
+      value: 技術ノート@iOS
+  - type: textarea
+    id: problem
+    attributes:
+      label: 問題・課題の特定
+      description: バグを処理したり、既存コードを改善したり、新しい機能を実装したり、問題に直面したりする場合、全ては問題を特定し理解することから始まる。バグやエラーの場合、すぐに詳細なメモを用意する。エラーメッセージ、スタックトレース、スクリーンショット、その他、問題の本質を捉えるのに役立つものなど。ノートは小さな断片でもOKです。
+    validations:
+        required: true
+  - type: textarea
+    id: search
+    attributes:
+      label: 可能な解決策の調査
+      description: 問題を特定したあと、次のステップは潜在的な解決策を掘り下げることです。この段階では、有望なライブラリ、ツール、さらにはStack Overflowの回答や関連するGitHubのIssueを探索します。
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        ## ソリューションを検証
+        研究の対象となる可能性のあるソリューションを調べたり、まだ調べ途中であっても、実装してみて、どれがうまくいくか、どれがうまくいかないか、そしてその理由を見極める時間です。
+        このフェーズでは、試しているコードのスニペットと出力結果をキャプチャするダイナミックなコーディング記録になります。
+  - type: textarea
+    id: good-case
+    attributes:
+      label: うまくいった場合
+      description: うまくいった場合は、その問題の記録、潜在的な解決策、そして最終的な成功したアプローチなどは、知識ベースの貴重な一部となる。そうすることで、将来なぜこのソリューションを選んだのかを理解するために参照することができます。
+    validations:
+      required: false
+  - type: textarea
+    id: bad-case
+    attributes:
+      label: うまくいかなかった場合
+      description: 成功だけでなく、失敗も記録することで、繰り返し同じ間違いを犯さないように助けてくれ、そして挑戦に伴う課題をより深く理解するのに役立ちます。
+    validations:
+      required: false
