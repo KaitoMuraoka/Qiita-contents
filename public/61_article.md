@@ -2,11 +2,11 @@
 title: 【AndroidView】RecyclerView から Groupi を使ってみる
 tags:
   - Android
-  - Groupie
   - Kotlin
+  - Groupie
 private: false
-updated_at: ''
-id: null
+updated_at: '2024-01-28T21:53:11+09:00'
+id: a6b3f769269be9af9e6f
 organization_url_name: null
 slide: false
 ignorePublish: false
