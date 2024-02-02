@@ -4,8 +4,8 @@ tags:
   - iOS
   - Swift
 private: false
-updated_at: ''
-id: null
+updated_at: '2024-02-02T16:04:28+09:00'
+id: 00813ed683a6d8e89c2a
 organization_url_name: null
 slide: false
 ignorePublish: false
