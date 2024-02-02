@@ -1,7 +1,8 @@
 ---
 title: 【Swift】private(set) と fileprivate(set)
 tags:
-  - ''
+  - iOS
+  - Swift
 private: false
 updated_at: ''
 id: null
@@ -61,6 +62,6 @@ print(myFileInstance.myProperty) // 出力："Goodbye World"
 # 参考文献
 https://qiita.com/mototaji/items/d1ae68457a118df71458
 
-[https://swift.tecc0.com/?p=631](https://egg-is-world.com/2016/02/09/swift-property-access/)https://egg-is-world.com/2016/02/09/swift-property-access/
+https://egg-is-world.com/2016/02/09/swift-property-access/
 
 https://qiita.com/codelynx/items/43e1c4f176730d952d13
