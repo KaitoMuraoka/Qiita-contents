@@ -3,7 +3,7 @@ title: 技術ノートの取り方
 tags:
   - ノート
 private: true
-updated_at: '2024-02-02T16:04:28+09:00'
+updated_at: '2024-03-10T21:37:11+09:00'
 id: 928d9c18f89aa52e963e
 organization_url_name: null
 slide: false
