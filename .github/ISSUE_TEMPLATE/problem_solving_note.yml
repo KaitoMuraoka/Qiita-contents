@@ -1,5 +1,5 @@
-name: Feature request
-description: Create a report to help us imporve
+name: Bug report
+description: Create a report to help us improve
 title: ""
 labels: []
 body:
@@ -7,12 +7,25 @@ body:
     id: overview
     attributes:
      label: 概要
-     description: 改善案の概要
+     description: バグの概要
   - type: textarea
-    id: gole
+    id: reproduction-procedure
     attributes:
-      label: ゴール・目的
+      label: 再現手順
+      description: バグの再現手順を箇条書きで書いてください
   - type: textarea
-    id: design
+    id: cause
     attributes:
-     label: 使用・デザイン
+     label: 原因
+     description: バグの原因と思われる内容
+  - type: textarea
+    id: proposed-amendment
+    attributes:
+     label: 修正案
+     description: 現状考えられる修正案があれば書いていく
+  - type: textarea
+    id: impact
+    attributes:
+      label: 修正案の影響範囲
+      description: 修正案で発生する影響範囲がわかる場合は書いてください
+  
