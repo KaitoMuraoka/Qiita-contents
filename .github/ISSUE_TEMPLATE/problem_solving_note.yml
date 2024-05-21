@@ -23,4 +23,6 @@ body:
     attributes:
       label: タスク
       description: 細かいタスクに分解できているなら書き出す
-      placeholder: - [ ]
+      placeholder: |
+        - [ ] TBD
+        - [ ] TBD
