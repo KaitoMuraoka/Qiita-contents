@@ -6,13 +6,13 @@ body:
   - type: textarea
     id: description_bug
     attributes:
-      value: Describe the bug
+      label: Describe the bug
       description: 不具合を説明してください
 
   - type: textarea
     id: reproduction_procedure
     attributes:
-      label: 再現手順
+      label: To Reproduce
       description: バグの再現手順を箇条書きで書いてください
       placeholder: |
         1.TBD
@@ -21,7 +21,7 @@ body:
   - type: textarea
     id: expected_behaviro
     attributes:
-      value: Expected behavior
+      label: Expected behavior
       description: 理想的な動作
       placeholder: |
         1.TBD
@@ -30,7 +30,7 @@ body:
   - type: textarea
     id: environment
     attributes:
-      value: Environment
+      label: Environment
       description: 開発環境
       placeholder: |
         Xcode: v15.0
