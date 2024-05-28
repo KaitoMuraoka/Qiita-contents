@@ -4,13 +4,13 @@ title: "[Bug]"
 labels: ["bug"]
 body:
   -type: textarea
-    id: description-bug
+    id: description_bug
     attributes:
       value: Describe the bug
       description: 不具合を説明してください
 
   - type: textarea
-    id: reproduction-procedure
+    id: reproduction_procedure
     attributes:
       label: 再現手順
       description: バグの再現手順を箇条書きで書いてください
@@ -19,7 +19,7 @@ body:
         2.TBD
 
   -type: textarea
-    id: expected-behaviro
+    id: expected_behaviro
     attributes:
       value: Expected behavior
       description: 理想的な動作
@@ -28,7 +28,7 @@ body:
         2.TBD
 
   -type: textarea
-    id: expected-behaviro
+    id: environment
     attributes:
       value: Environment
       description: 開発環境
