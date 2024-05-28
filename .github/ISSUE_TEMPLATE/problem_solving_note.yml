@@ -3,7 +3,7 @@ description: Create a report to Bug
 title: "[Bug]"
 labels: ["bug"]
 body:
-  -type: textarea
+  - type: textarea
     id: description_bug
     attributes:
       value: Describe the bug
@@ -18,7 +18,7 @@ body:
         1.TBD
         2.TBD
 
-  -type: textarea
+  - type: textarea
     id: expected_behaviro
     attributes:
       value: Expected behavior
@@ -27,7 +27,7 @@ body:
         1.TBD
         2.TBD
 
-  -type: textarea
+  - type: textarea
     id: environment
     attributes:
       value: Environment
@@ -36,4 +36,3 @@ body:
         Xcode: v15.0
         Swift: 5.10
         iOS: 17.0
-
