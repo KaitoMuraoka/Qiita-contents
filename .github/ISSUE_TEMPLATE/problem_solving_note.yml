@@ -1,13 +1,14 @@
-name: Bug report
-description: Create a report to help us improve
-title: "title"
-labels: []
+name: Bug Report
+description: Create a report to Bug
+title: "[Bug]"
+labels: ["bug"]
 body:
-  - type: textarea
-    id: overview
+  -type: textarea
+    id: description-bug
     attributes:
-     label: 概要
-     description: バグの概要を書いてください
+      value: Describe the bug
+      description: 不具合を説明してください
+
   - type: textarea
     id: reproduction-procedure
     attributes:
@@ -15,20 +16,24 @@ body:
       description: バグの再現手順を箇条書きで書いてください
       placeholder: |
         1.TBD
+        2.TBD
+
+  -type: textarea
+    id: expected-behaviro
+    attributes:
+      value: Expected behavior
+      description: 理想的な動作
+      placeholder: |
         1.TBD
-  - type: textarea
-    id: cause
+        2.TBD
+
+  -type: textarea
+    id: expected-behaviro
     attributes:
-     label: 原因
-     description: バグの原因と思われる内容
-  - type: textarea
-    id: proposed-amendment
-    attributes:
-     label: 修正案
-     description: 現状考えられる修正案があれば書いていください
-  - type: textarea
-    id: impact
-    attributes:
-      label: 修正案の影響範囲
-      description: 修正案で発生する影響範囲がわかる場合は書いてください
-  
+      value: Environment
+      description: 開発環境
+      placeholder: |
+        Xcode: v15.0
+        Swift: 5.10
+        iOS: 17.0
+
