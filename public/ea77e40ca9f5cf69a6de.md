@@ -5,7 +5,6 @@ tags:
   - iOS
   - Keyboard
   - Swift
-  - Swift5
 private: false
 updated_at: '2023-10-21T23:08:31+09:00'
 id: ea77e40ca9f5cf69a6de
