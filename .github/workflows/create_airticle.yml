@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       airticle_name:
-        description: '記事のタイトル'
-        required: true 
+        description: "記事のタイトル"
+        required: true
         type: string
       branch_name:
-        description: 'ブランチ名'
-        required: true 
+        description: "ブランチ名"
+        required: true
         type: string
 
 permissions:
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@4
+      - uses: actions/setup-node@v4
 
       - name: Set name and email to Git
         run: |
